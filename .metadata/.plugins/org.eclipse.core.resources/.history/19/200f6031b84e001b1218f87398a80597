@@ -1,0 +1,35 @@
+package variaveis;
+
+public class Carrinho {
+
+	public static void main(String[] args) {
+		
+
+		/*
+		 * Criem as variáveis para
+		 * Nome do Produto
+		 * Categoria do Produto (alimenticio, eletrodomestico)
+		 * Valor do Produto
+		 * Quantidade do Produto
+		 * Imposto do Produto
+		 */
+		
+		
+		String nome = "Café";
+		String categoria = "Alimentício";
+		double valor = 8.50;
+		int quantidade = 10;
+		double imposto = 8.7;
+		
+		System.out.println(nome);
+		System.out.println(categoria);
+		System.out.println(valor);
+		System.out.println(quatidade);
+		System.out.println(imposto);
+
+		
+		
+		
+	}
+
+}

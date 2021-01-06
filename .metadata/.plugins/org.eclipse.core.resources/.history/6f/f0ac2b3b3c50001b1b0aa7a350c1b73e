@@ -1,0 +1,36 @@
+package repeticao;
+
+import javax.swing.JOptionPane;
+
+public class Ex4PptSlide77 {
+
+	public static void main(String[] args) {
+	
+		String nome = "";
+		int idade = 0;
+		do {
+			
+			nome = JOptionPane.showInputDialog("Digite seu nome");
+			idade = Integer.parseInt(JOptionPane.showInputDialog("Digite sua idade"));
+			
+		}while(JOptionPane.showConfirmDialog(null, "Deseja realizar outro cadastro?", "Pergunta", JOptionPane.YES_NO_OPTION)==0);
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+
+	}
+
+}

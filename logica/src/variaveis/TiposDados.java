@@ -1,0 +1,63 @@
+package variaveis;
+
+import javax.swing.JOptionPane;
+
+public class TiposDados {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		/*
+		 * Existem dois tipos de dados
+		 * 
+		 * - alfanumérico: é o dado que NÃO VAI ser utilizado em uma expressão matemática
+		 * e também não é um dado sensível (muito utilizado) para o modelo de negócio.
+		 * EM JAVA=> String
+		 *  
+		 * - numérico: é o dado que PODE ser utilizado em uma expressão matemática.
+		 * EM JAVA => int (numeros inteiros) e double (para numeros reais - casas decimais)
+		 */
+		
+		/*
+		 * Nome da variável: Identificador
+		 * 
+		 * Regras:
+		 * 1ª Não pode começar com número. Ex: 1Berto
+		 * 2ª Não pode fazer uso de palavras reservadas. Ex: int / double
+		 * 3ª Não pode usar caractéres especiais. Ex: D@t@ / Nome Cliente (não pode ter espaço).
+		 * 
+		 * Padrões:
+		 * 1ª Nomes significativos. Evitem X, XPTO, FULANO, etc...
+		 * 2ª Começa com letra minúscula
+		 * 3ª Padrão CamelCase (dataNascimento) Correto - não utiliza espaço e coloca a segunda palavra iniciando com MAIUSCULA
+		 * 
+		 */
+		
+		String nome = JOptionPane.showInputDialog("Digite o seu nome");
+		/*
+		 * Tipos numéricos são primitivos, para apoiá-los utilizamos as classes Wrappers
+		 * int = Integer
+		 * double = Double
+		 * short = Short
+		 * boolean = Boolean
+		 */
+		double altura = Double.parseDouble(JOptionPane.showInputDialog("Digite a altura"));
+		double peso = Double.parseDouble(JOptionPane.showInputDialog("Digite o peso"));
+		double imc = peso / (altura * altura);
+		
+		System.out.println("Nome:.. " + nome);
+		System.out.println("Altura: " + altura);
+		System.out.println("Peso: " + peso);
+		System.out.println("IMC: " + imc);
+		
+		
+		
+		
+		
+		
+		
+	}
+	
+	
+
+}

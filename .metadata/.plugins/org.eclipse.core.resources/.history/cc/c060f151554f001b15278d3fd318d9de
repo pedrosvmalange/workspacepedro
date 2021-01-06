@@ -1,0 +1,36 @@
+package variaveis;
+
+public class TipoString {
+
+	public static void main(String[] args) {
+		
+		// String é um tipo de referência;
+		// Date é um tipo de referência (começam com letra maiuscula);
+				
+		String email = "PedrOsVmalAngE@gmail.com";
+		
+		System.out.println("Original: " + email);
+		System.out.println("Maiusculo: " + email.toUpperCase());
+		System.out.println("Minusculo: " + email.toLowerCase());
+		System.out.println("Qtde Caracteres: " + email.length());
+		// length retorna a quantidade de caracteres da STRING
+		System.out.println("Tem arroba?: " + email.contains("@"));
+		// contais retorna TRUE or FALSE (boolean) sobre a existência do caracter
+		System.out.println("Tem arroba?: " + email.indexOf(@));
+		
+		
+		
+		
+		/*
+		 * Posição dos Caracteres
+		 * 
+		 * P E D R O
+		 * 0 1 2 3 4 (o primeiro carcater é sempre o 0)
+		 */
+		 
+		
+		
+
+	}
+
+}

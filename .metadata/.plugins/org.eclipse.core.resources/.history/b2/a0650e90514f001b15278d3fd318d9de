@@ -1,0 +1,57 @@
+package variaveis;
+
+import javax.swing.JOptionPane;
+
+public class TiposPrimitivos {
+
+	public static void main(String[] args) {
+		
+		
+		/*
+		 * boolean: dado lógico (true/false)
+		 * char: 1 caracter
+		 * byte: -127 a +128
+		 * short
+		 * int
+		 * long
+		 * 
+		 * -- para numeros reais -- 
+		 * 
+		 * float
+		 * double: dobro de precisão nas casas decimais quando comparado com o float
+		 */
+		
+		/*
+		 * Criem as variáveis para:
+		 * nota (semestral1)
+		 * nota (semestral2)
+		 * falta (máximo 200)
+		 * disciplina (nome da matéria)
+		 * média (calculem)
+		 * 
+		 */
+		
+		
+		
+		float semestral1 = Float.parseFloat(JOptionPane.showInputDialog("Digite nota 1"));
+		float semestral2 = Float.parseFloat(JOptionPane.showInputDialog("Digite nota 2"));
+		short faltas = Short.parseShort(JOptionPane.showInputDialog("Digite o numero de faltas"));
+		String disciplina = JOptionPane.showInputDialog("Digite a Disciplina");
+		float media = (semestral1 + semestral2) / 2;
+		
+		System.out.println(semestral1);
+		System.out.println(semestral2);
+		System.out.println(faltas);
+		System.out.println(disciplina);
+		System.out.println(media);
+		
+		// cast: conversão entre tipos compatíveis
+		float semestral3 = (float)3.5; // precisa colocar o "tipo (FLOAT)" antes do número
+		
+		
+		
+		
+
+	}
+
+}

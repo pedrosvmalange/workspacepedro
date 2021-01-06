@@ -1,0 +1,67 @@
+package repeticao;
+
+import javax.swing.JOptionPane;
+
+public class Ex4PptSlide77 {
+
+	public static void main(String[] args) {
+
+		String nomei = "";
+		int idadej = 0;
+		int i=1;
+		int j=1;
+		int maior=0;
+		int somaidade = 0;
+		int idadev = 0;
+		int idadeExp = 0;
+		String nomeExp = "";
+		String nomev = "";
+		int v=0;
+		int idade0 = 0;
+		
+		do {
+
+			nomei = JOptionPane.showInputDialog("Digite seu nome");
+			idadej = Integer.parseInt(JOptionPane.showInputDialog("Digite sua idade"));
+			
+			somaidade = idadej + somaidade;
+
+			if (idadej>18) {
+				maior++;
+			}
+			
+			if (idadej>idadev) {
+				idadeExp = idadej;
+				nomeExp = nomei;
+			}
+
+			i++;
+			j++;
+			v = j-1;
+			System.out.println("Nome:" + nomei + " Idade:" + idadej);
+
+
+			
+			
+		}while(JOptionPane.showConfirmDialog(null, "Deseja realizar outro cadastro?", "Pergunta", JOptionPane.YES_NO_OPTION)==0);
+
+			
+
+
+		System.out.println("Maiores de Idade: " + maior);
+		System.out.println("Media das Idades: " + somaidade/(j-1));		
+		System.out.println("Pessoa mais experiente: " + nomeExp + " idade: " + idadeExp);
+
+
+
+
+
+
+
+
+
+
+
+	}
+
+}

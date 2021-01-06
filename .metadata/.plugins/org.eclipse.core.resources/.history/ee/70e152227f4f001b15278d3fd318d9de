@@ -1,0 +1,21 @@
+package decisao;
+
+import javax.swing.JOptionPane;
+
+public class ListaDoisExUm {
+
+	public static void main(String[] args) {
+		
+		
+		short diaria = Short.parseShort(JOptionPane.showInputDialog("Diárias"));
+		double fixo = 80.00;
+		
+		if (diaria>15) {
+			System.out.println(fixo*diaria*5.5);
+		} else if (diaria==15) {
+			System.out.println(fixo*diaria*6);
+		} else
+			System.out.println(fixo*diaria*8);
+	}
+
+}
